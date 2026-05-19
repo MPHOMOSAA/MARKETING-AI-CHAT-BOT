@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>Contact — Diamond Aqua Pools</title>
+<link rel="icon" href="images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="wc"></canvas>
+<div class="sl" id="sl"></div>
+<div id="cur"></div><div id="cur2"></div>
+<div class="pto"><div class="pts"></div><div class="pts"></div><div class="pts"></div><div class="pts"></div><div class="pts"></div></div>
+<div id="botRider">
+  <div class="br-av"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bgg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0099B3"/><stop offset="100%" stop-color="#003A50"/></linearGradient></defs><rect width="100" height="100" fill="url(#bgg)"/><rect x="22" y="18" width="56" height="48" rx="13" fill="#00C2E0" opacity=".9"/><circle cx="36" cy="36" r="8" fill="#070D18"/><circle cx="64" cy="36" r="8" fill="#070D18"/><circle cx="38.5" cy="33.5" r="3" fill="white"/><circle cx="66.5" cy="33.5" r="3" fill="white"/><path d="M35 54 Q50 64 65 54" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/><line x1="50" y1="18" x2="50" y2="8" stroke="#00C2E0" stroke-width="3"/><circle cx="50" cy="6" r="5" fill="#C9A84C"/><rect x="14" y="28" width="8" height="14" rx="4" fill="#00C2E0" opacity=".7"/><rect x="78" y="28" width="8" height="14" rx="4" fill="#00C2E0" opacity=".7"/><rect x="28" y="70" width="44" height="24" rx="9" fill="#0099B3" opacity=".85"/><circle cx="40" cy="82" r="4.5" fill="#00C2E0" opacity=".6"/><circle cx="50" cy="82" r="4.5" fill="#C9A84C" opacity=".9"/><circle cx="60" cy="82" r="4.5" fill="#00C2E0" opacity=".6"/></svg></div>
+  <div class="br-paper"><div></div><div></div><div></div></div>
+</div>
+<nav id="nav">
+  <a href="index.html" class="nlogo" data-page><img src="images/favicon.png" alt="logo"><div><div class="nlogo-t">Diamond Aqua <span>Pools</span></div><span class="nlogo-s">Est. 2012 · Johannesburg</span></div></a>
+  <div class="nlinks">
+    <a href="index.html"    class="nl"     data-page>Home</a>
+    <a href="services.html" class="nl"     data-page>Services</a>
+    <a href="gallery.html"  class="nl"     data-page>Gallery</a>
+    <a href="about.html"    class="nl"     data-page>About</a>
+    <a href="reviews.html"  class="nl"     data-page>Reviews</a>
+    <a href="contact.html"  class="nl act" data-page>Contact</a>
+  </div>
+  <a href="#" class="nbtn" onclick="openChat();return false;"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>Free Quote</a>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-d" id="mobD">
+  <nav class="mob-links">
+    <a href="index.html"    class="dl"     data-page>Home</a>
+    <a href="services.html" class="dl"     data-page>Services</a>
+    <a href="gallery.html"  class="dl"     data-page>Gallery</a>
+    <a href="about.html"    class="dl"     data-page>About</a>
+    <a href="reviews.html"  class="dl"     data-page>Reviews</a>
+    <a href="contact.html"  class="dl act" data-page>Contact</a>
+  </nav>
+  <a href="#" class="mob-cta" onclick="closeMob();openChat();return false;">Get Free Quote</a>
+</div>
+<div class="bnav"><div class="bnav-i">
+  <a href="index.html"   class="bi" data-page><span class="bi-ic">🏠</span><span class="bi-lb">Home</span></a>
+  <a href="gallery.html" class="bi" data-page><span class="bi-ic">🖼️</span><span class="bi-lb">Gallery</span></a>
+  <a href="#" class="bc" onclick="openChat();return false;"><div class="bc-w"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg></div><span class="bc-lb">Quote</span></a>
+  <a href="reviews.html" class="bi"     data-page><span class="bi-ic">⭐</span><span class="bi-lb">Reviews</span></a>
+  <a href="contact.html" class="bi act" data-page><span class="bi-ic">📞</span><span class="bi-lb">Contact</span></a>
+</div></div>
+
+<!-- PAGE HERO -->
+<div class="ph">
+  <div class="ph-bg" style="background-image:url('images/p13.jpg')"></div>
+  <div class="ph-ov"></div>
+  <div class="ph-cnt">
+    <div class="ph-tag">Get In Touch</div>
+    <h1>Let's Talk<br><em>About Your Pool.</em></h1>
+  </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<section>
+  <div class="sec"><div class="si">
+    <!-- Maphake banner -->
+    <div class="ma-ban rv">
+      <div class="ma-l">
+        <div class="ma-ic">🤖</div>
+        <div class="ma-txt">Want a faster quote? <strong>Aqua Intelligence™</strong> can get you sorted in 2 minutes — 24 hours a day, 7 days a week. No waiting, no forms.</div>
+      </div>
+      <a href="#" class="ma-btn" onclick="openChat();return false;">Chat Now →</a>
+    </div>
+
+    <div class="co-grid">
+      <!-- LEFT — contact info -->
+      <div class="rvl">
+        <div class="stag">Contact Details</div>
+        <div class="sh" style="font-size:clamp(30px,4vw,50px)">Reach Us<br><em>Directly.</em></div>
+        <p class="sp" style="margin-bottom:32px;font-size:14px">Marcus and his team respond within 2 business hours. Prefer to talk? Call us on the number below — the same one Marcus gives every client.</p>
+
+        <div class="ci-item"><div class="ci-ic">📞</div><div><div class="ci-t">Phone</div><div class="ci-v">011 456 7890</div></div></div>
+        <div class="ci-item"><div class="ci-ic">✉️</div><div><div class="ci-t">Email</div><div class="ci-v">info@diamondaquapools.co.za</div></div></div>
+        <div class="ci-item"><div class="ci-ic">📍</div><div><div class="ci-t">Service Area</div><div class="ci-v">Johannesburg & Greater Gauteng</div></div></div>
+        <div class="ci-item"><div class="ci-ic">🕐</div><div><div class="ci-t">Office Hours</div><div class="ci-v">Mon–Fri 7am–6pm · Sat 8am–2pm</div></div></div>
+        <div class="ci-item"><div class="ci-ic">💬</div><div><div class="ci-t">WhatsApp</div><div class="ci-v">+27 81 234 5678</div></div></div>
+
+        <div style="margin-top:32px;padding:22px;background:rgba(0,194,224,.05);border:1px solid rgba(0,194,224,.12);border-radius:16px">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--gold);margin-bottom:8px">Our Guarantee</div>
+          <p style="font-size:13px;color:var(--grey);line-height:1.85">We guarantee a callback within 2 hours of any enquiry. No exceptions. Marcus personally oversees every response and every project.</p>
+        </div>
+
+        <div style="margin-top:22px">
+          <div class="ma-badge" style="font-size:12px">🤖 AI Qualification Powered by Maphake Automation</div>
+        </div>
+      </div>
+
+      <!-- RIGHT — quote form -->
+      <div class="rvr">
+        <div class="co-form">
+          <div class="co-title">Request a Free Quote</div>
+          <div class="co-row">
+            <div class="co-grp"><label>First Name</label><input id="cfFirst" type="text" placeholder="Thabo"></div>
+            <div class="co-grp"><label>Last Name</label><input id="cfLast" type="text" placeholder="Molefe"></div>
+          </div>
+          <div class="co-row">
+            <div class="co-grp"><label>Email</label><input id="cfEmail" type="email" placeholder="thabo@example.com"></div>
+            <div class="co-grp"><label>Phone</label><input id="cfPhone" type="tel" placeholder="071 234 5678"></div>
+          </div>
+          <div class="co-grp"><label>Your Area / Suburb</label><input type="text" placeholder="e.g. Sandton, Fourways, Midrand..."></div>
+          <div class="co-grp"><label>Service Required</label>
+            <select><option>New Pool Installation</option><option>Pool Renovation</option><option>Pool Maintenance</option><option>Not sure yet</option></select>
+          </div>
+          <div class="co-grp"><label>Tell Us More (Optional)</label><textarea rows="3" placeholder="Brief description of your project, timeline, or any questions you have..."></textarea></div>
+          <button class="co-btn" onclick="submitForm(this)">
+            Submit — Get My Free Quote 🏊
+          </button>
+          <p style="font-size:11px;color:var(--dg);text-align:center;margin-top:14px;line-height:1.7">No obligation. No spam. Callback within 2 hours.<br>Powered by Aqua Intelligence™ · Maphake Automation</p>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<!-- FAQ -->
+<section class="bg2">
+  <div class="sec"><div class="si">
+    <div class="rv" style="text-align:center;margin-bottom:50px">
+      <div class="stag" style="justify-content:center">FAQs</div>
+      <div class="sh" style="text-align:center">Common<br><em>Questions.</em></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px" class="rv">
+      <div style="background:rgba(11,22,34,.7);border:1px solid rgba(0,194,224,.1);border-radius:16px;padding:24px">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--wh);margin-bottom:10px">How long does a new pool take?</div>
+        <p style="font-size:13px;color:var(--grey);line-height:1.85">Fibreglass: 3–6 weeks. Concrete/Gunite: 8–16 weeks depending on complexity. We give you an exact timeline in your quote.</p>
+      </div>
+      <div style="background:rgba(11,22,34,.7);border:1px solid rgba(0,194,224,.1);border-radius:16px;padding:24px">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--wh);margin-bottom:10px">Do you handle permits?</div>
+        <p style="font-size:13px;color:var(--grey);line-height:1.85">Yes — fully. We handle all municipality permits, engineer sign-offs, and compliance certificates. Zero admin for you.</p>
+      </div>
+      <div style="background:rgba(11,22,34,.7);border:1px solid rgba(0,194,224,.1);border-radius:16px;padding:24px">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--wh);margin-bottom:10px">What areas do you service?</div>
+        <p style="font-size:13px;color:var(--grey);line-height:1.85">All of Johannesburg, Pretoria, Centurion, Midrand, and greater Gauteng. New installations outside this area are considered on request.</p>
+      </div>
+      <div style="background:rgba(11,22,34,.7);border:1px solid rgba(0,194,224,.1);border-radius:16px;padding:24px">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;color:var(--wh);margin-bottom:10px">Is the quote really free?</div>
+        <p style="font-size:13px;color:var(--grey);line-height:1.85">100% free, 100% no obligation. You can get a personalised quote from our AI in 2 minutes — zero pressure to proceed.</p>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<footer>
+  <div><div class="fw">Diamond Aqua <span>Pools</span></div><div class="fm">Premium Pool Installations · Johannesburg · Est. 2012</div></div>
+  <div class="fl"><a href="index.html" data-page>Home</a><a href="services.html" data-page>Services</a><a href="gallery.html" data-page>Gallery</a><a href="about.html" data-page>About</a><a href="reviews.html" data-page>Reviews</a><a href="contact.html" data-page>Contact</a></div>
+  <div><div class="ma-badge">🤖 AI by Maphake Automation</div><div class="fr">© 2026 Diamond Aqua Pools. All rights reserved.</div></div>
+</footer>
+
+<div class="chat-fab">
+  <div class="chat-bub" id="chatBub"><strong>Aqua Intelligence™</strong> is online 💬</div>
+  <button class="chat-btn" onclick="openChat()"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0099B3"/><stop offset="100%" stop-color="#004A60"/></linearGradient></defs><circle cx="50" cy="50" r="50" fill="url(#fbg)"/><rect x="22" y="18" width="56" height="46" rx="12" fill="#00C2E0" opacity=".9"/><circle cx="36" cy="35" r="7" fill="#070D18"/><circle cx="64" cy="35" r="7" fill="#070D18"/><circle cx="38" cy="33" r="2.5" fill="white"/><circle cx="66" cy="33" r="2.5" fill="white"/><path d="M35 52 Q50 62 65 52" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/><line x1="50" y1="18" x2="50" y2="9" stroke="#00C2E0" stroke-width="2.5"/><circle cx="50" cy="7" r="4" fill="#C9A84C"/><rect x="28" y="68" width="44" height="22" rx="8" fill="#0099B3" opacity=".85"/><circle cx="40" cy="79" r="4" fill="#00C2E0" opacity=".6"/><circle cx="50" cy="79" r="4" fill="#C9A84C" opacity=".9"/><circle cx="60" cy="79" r="4" fill="#00C2E0" opacity=".6"/></svg><div class="chat-notif">1</div></button>
+</div>
+<div class="chat-modal" id="chatModal">
+  <div class="cm-hd">
+    <div class="cm-av-wrap"><div class="cm-av"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0099B3"/><stop offset="100%" stop-color="#003A50"/></linearGradient></defs><rect width="100" height="100" fill="url(#cbg)"/><rect x="22" y="18" width="56" height="48" rx="13" fill="#00C2E0" opacity=".9"/><circle cx="36" cy="36" r="8" fill="#070D18"/><circle cx="64" cy="36" r="8" fill="#070D18"/><circle cx="38.5" cy="33.5" r="3" fill="white"/><circle cx="66.5" cy="33.5" r="3" fill="white"/><path d="M35 54 Q50 64 65 54" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/><line x1="50" y1="18" x2="50" y2="8" stroke="#00C2E0" stroke-width="3"/><circle cx="50" cy="6" r="5" fill="#C9A84C"/><rect x="14" y="28" width="8" height="14" rx="4" fill="#00C2E0" opacity=".7"/><rect x="78" y="28" width="8" height="14" rx="4" fill="#00C2E0" opacity=".7"/><rect x="28" y="70" width="44" height="24" rx="9" fill="#0099B3" opacity=".85"/><circle cx="40" cy="82" r="4.5" fill="#00C2E0" opacity=".6"/><circle cx="50" cy="82" r="4.5" fill="#C9A84C" opacity=".9"/><circle cx="60" cy="82" r="4.5" fill="#00C2E0" opacity=".6"/></svg></div><div class="cm-ring"></div></div>
+    <div><div class="cm-nm">Aqua Intelligence™</div><div class="cm-ai">AI Pool Advisor</div><div class="cm-st"><div class="cm-std"></div>Online · Maphake Automation</div></div>
+    <button class="cm-close" onclick="closeChat()">✕</button>
+  </div>
+  <div class="cm-body" id="cmBody"></div>
+  <div id="leadsPanel" class="leads-panel" style="display:none"><div class="lp-t">📥 Live Lead Capture</div></div>
+  <div class="cm-ft"><input class="cm-inp" id="cmInp" placeholder="Type your message..." onkeydown="handleKey(event)" disabled><button class="cm-send" onclick="sendMsg()"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button></div>
+  <div class="cm-pw">Powered by <span>Maphake Automation</span></div>
+</div>
+<script src="shared.js"></script>
+</body>
+</html>

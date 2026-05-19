@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>Gallery — Diamond Aqua Pools</title>
+<link rel="icon" href="images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="wc"></canvas>
+<div class="sl" id="sl"></div>
+<div id="cur"></div><div id="cur2"></div>
+<div class="pto"><div class="pts"></div><div class="pts"></div><div class="pts"></div><div class="pts"></div><div class="pts"></div></div>
+<div id="botRider">
+  <div class="br-av"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bgg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0099B3"/><stop offset="100%" stop-color="#003A50"/></linearGradient></defs><rect width="100" height="100" fill="url(#bgg)"/><rect x="22" y="18" width="56" height="48" rx="13" fill="#00C2E0" opacity=".9"/><circle cx="36" cy="36" r="8" fill="#070D18"/><circle cx="64" cy="36" r="8" fill="#070D18"/><circle cx="38.5" cy="33.5" r="3" fill="white"/><circle cx="66.5" cy="33.5" r="3" fill="white"/><path d="M35 54 Q50 64 65 54" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/><line x1="50" y1="18" x2="50" y2="8" stroke="#00C2E0" stroke-width="3"/><circle cx="50" cy="6" r="5" fill="#C9A84C"/><rect x="14" y="28" width="8" height="14" rx="4" fill="#00C2E0" opacity=".7"/><rect x="78" y="28" width="8" height="14" rx="4" fill="#00C2E0" opacity=".7"/><rect x="28" y="70" width="44" height="24" rx="9" fill="#0099B3" opacity=".85"/><circle cx="40" cy="82" r="4.5" fill="#00C2E0" opacity=".6"/><circle cx="50" cy="82" r="4.5" fill="#C9A84C" opacity=".9"/><circle cx="60" cy="82" r="4.5" fill="#00C2E0" opacity=".6"/></svg></div>
+  <div class="br-paper"><div></div><div></div><div></div></div>
+</div>
+<nav id="nav">
+  <a href="index.html" class="nlogo" data-page><img src="images/favicon.png" alt="logo"><div><div class="nlogo-t">Diamond Aqua <span>Pools</span></div><span class="nlogo-s">Est. 2012 · Johannesburg</span></div></a>
+  <div class="nlinks">
+    <a href="index.html"    class="nl"     data-page>Home</a>
+    <a href="services.html" class="nl"     data-page>Services</a>
+    <a href="gallery.html"  class="nl act" data-page>Gallery</a>
+    <a href="about.html"    class="nl"     data-page>About</a>
+    <a href="reviews.html"  class="nl"     data-page>Reviews</a>
+    <a href="contact.html"  class="nl"     data-page>Contact</a>
+  </div>
+  <a href="#" class="nbtn" onclick="openChat();return false;"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>Free Quote</a>
+  <button class="ham" id="ham"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-d" id="mobD">
+  <nav class="mob-links">
+    <a href="index.html"    class="dl"     data-page>Home</a>
+    <a href="services.html" class="dl"     data-page>Services</a>
+    <a href="gallery.html"  class="dl act" data-page>Gallery</a>
+    <a href="about.html"    class="dl"     data-page>About</a>
+    <a href="reviews.html"  class="dl"     data-page>Reviews</a>
+    <a href="contact.html"  class="dl"     data-page>Contact</a>
+  </nav>
+  <a href="#" class="mob-cta" onclick="closeMob();openChat();return false;">Get Free Quote</a>
+</div>
+<div class="bnav"><div class="bnav-i">
+  <a href="index.html"   class="bi"     data-page><span class="bi-ic">🏠</span><span class="bi-lb">Home</span></a>
+  <a href="gallery.html" class="bi act" data-page><span class="bi-ic">🖼️</span><span class="bi-lb">Gallery</span></a>
+  <a href="#" class="bc" onclick="openChat();return false;"><div class="bc-w"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg></div><span class="bc-lb">Quote</span></a>
+  <a href="reviews.html" class="bi"     data-page><span class="bi-ic">⭐</span><span class="bi-lb">Reviews</span></a>
+  <a href="contact.html" class="bi"     data-page><span class="bi-ic">📞</span><span class="bi-lb">Contact</span></a>
+</div></div>
+
+<!-- PAGE HERO -->
+<div class="ph">
+  <div class="ph-bg" style="background-image:url('images/p2.jpg')"></div>
+  <div class="ph-ov"></div>
+  <div class="ph-cnt">
+    <div class="ph-tag">Our Portfolio</div>
+    <h1>450+ Pools<br><em>Built.</em></h1>
+  </div>
+</div>
+
+<!-- GALLERY GRID -->
+<section>
+  <div class="sec"><div class="si">
+    <div class="rv" style="text-align:center;margin-bottom:0">
+      <div class="stag" style="justify-content:center">Real Projects</div>
+      <div class="sh" style="text-align:center">Every Pool Tells<br><em>a Story.</em></div>
+      <p class="sp" style="text-align:center;margin:0 auto;max-width:560px">Real projects. Real clients. Real craftsmanship across Johannesburg and Gauteng.</p>
+    </div>
+    <div class="neon-grid rv">
+      <!-- LARGE feature -->
+      <div class="ni large d1"><div class="ni-inner"><img src="images/p8.jpg" alt="Dark infinity pool with mountain waterfall" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Infinity Edge Pool</div><div class="ni-sub">Sandton · New Installation 2024</div></div></div></div></div>
+      <!-- Normal -->
+      <div class="ni d2"><div class="ni-inner"><img src="images/p1.jpg" alt="Luxury infinity pool with wooden deck and spa" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Luxury Pool &amp; Spa</div><div class="ni-sub">Fourways · Completed 2024</div></div></div></div></div>
+      <div class="ni d3"><div class="ni-inner"><img src="images/p2.jpg" alt="Bush pool panoramic view with umbrellas" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Safari Infinity Pool</div><div class="ni-sub">Midrand · Completed 2023</div></div></div></div></div>
+      <div class="ni d4"><div class="ni-inner"><img src="images/p3.jpg" alt="Bush lodge pool with thatched huts" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Bush Lodge Pool</div><div class="ni-sub">Pretoria · Completed 2024</div></div></div></div></div>
+      <div class="ni d5"><div class="ni-inner"><img src="images/p4.jpg" alt="Pool with sunset golden loungers and thatched roof" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Golden Hour Pool</div><div class="ni-sub">Centurion · Completed 2024</div></div></div></div></div>
+      <!-- LARGE feature -->
+      <div class="ni large d1"><div class="ni-inner"><img src="images/p5.jpg" alt="Modern pool with waterfall feature and valley views" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Valley View Pool</div><div class="ni-sub">Randburg · Completed 2024</div></div></div></div></div>
+      <div class="ni d2"><div class="ni-inner"><img src="images/p6.jpg" alt="Cape Town sunset infinity pool overlooking bay" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Cape Town Infinity</div><div class="ni-sub">Clifton · Completed 2024</div></div></div></div></div>
+      <div class="ni d3"><div class="ni-inner"><img src="images/p9.jpg" alt="Dark luxury pool with modern home" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Dark Luxury Pool</div><div class="ni-sub">Morningside · Completed 2024</div></div></div></div></div>
+      <div class="ni d4"><div class="ni-inner"><img src="images/p10.jpg" alt="LED night pool with pink and red lighting" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">LED Night Pool</div><div class="ni-sub">Rosebank · Completed 2024</div></div></div></div></div>
+      <div class="ni d5"><div class="ni-inner"><img src="images/p11.jpg" alt="Palm tree pool with colourful pool floaties" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Resort Style Pool</div><div class="ni-sub">Fourways · Completed 2023</div></div></div></div></div>
+      <!-- LARGE feature -->
+      <div class="ni large d1"><div class="ni-inner"><img src="images/p12.jpg" alt="Classic home with pool and raised spa feature" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Pool &amp; Spa Combo</div><div class="ni-sub">Sandton · Renovation 2024</div></div></div></div></div>
+      <div class="ni d2"><div class="ni-inner"><img src="images/p13.jpg" alt="Modern pool with sun ledge and fire feature" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Sun Ledge Pool</div><div class="ni-sub">Midrand · Completed 2024</div></div></div></div></div>
+      <div class="ni d3"><div class="ni-inner"><img src="images/p7.jpg" alt="Dark reflective pool at dusk" loading="lazy"><div class="ni-ov"><div><div class="ni-lb">Reflective Pool</div><div class="ni-sub">Centurion · Completed 2024</div></div></div></div></div>
+    </div>
+    <div class="rv" style="text-align:center;margin-top:60px">
+      <a href="#" class="cb1" onclick="openChat();return false;"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>Get a Quote for Your Pool</a>
+    </div>
+  </div></div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="cta-bg" style="background-image:url('images/p1.jpg')"></div>
+  <div class="cta-ov"></div>
+  <div class="sec"><div class="cta-in rv">
+    <div class="stag" style="justify-content:center">Your Turn</div>
+    <div class="cta-h">Ready to Join<br><em>Our Portfolio?</em></div>
+    <p class="cta-sub">Chat with Aqua Intelligence™ and get your personalised quote in 2 minutes.</p>
+    <div class="cta-btns">
+      <a href="#" class="cb1" onclick="openChat();return false;"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>Chat with Aqua Intelligence™</a>
+      <a href="contact.html" class="cb2" data-page>Contact Us</a>
+    </div>
+  </div></div>
+</section>
+
+<footer>
+  <div><div class="fw">Diamond Aqua <span>Pools</span></div><div class="fm">Premium Pool Installations · Johannesburg · Est. 2012</div></div>
+  <div class="fl"><a href="index.html" data-page>Home</a><a href="services.html" data-page>Services</a><a href="gallery.html" data-page>Gallery</a><a href="about.html" data-page>About</a><a href="reviews.html" data-page>Reviews</a><a href="contact.html" data-page>Contact</a></div>
+  <div><div class="ma-badge">🤖 AI by Maphake Automation</div><div class="fr">© 2026 Diamond Aqua Pools. All rights reserved.</div></div>
+</footer>
+
+<div class="chat-fab">
+  <div class="chat-bub" id="chatBub"><strong>Aqua Intelligence™</strong> is online 💬</div>
+  <button class="chat-btn" onclick="openChat()"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0099B3"/><stop offset="100%" stop-color="#004A60"/></linearGradient></defs><circle cx="50" cy="50" r="50" fill="url(#fbg)"/><rect x="22" y="18" width="56" height="46" rx="12" fill="#00C2E0" opacity=".9"/><circle cx="36" cy="35" r="7" fill="#070D18"/><circle cx="64" cy="35" r="7" fill="#070D18"/><circle cx="38" cy="33" r="2.5" fill="white"/><circle cx="66" cy="33" r="2.5" fill="white"/><path d="M35 52 Q50 62 65 52" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/><line x1="50" y1="18" x2="50" y2="9" stroke="#00C2E0" stroke-width="2.5"/><circle cx="50" cy="7" r="4" fill="#C9A84C"/><rect x="28" y="68" width="44" height="22" rx="8" fill="#0099B3" opacity=".85"/><circle cx="40" cy="79" r="4" fill="#00C2E0" opacity=".6"/><circle cx="50" cy="79" r="4" fill="#C9A84C" opacity=".9"/><circle cx="60" cy="79" r="4" fill="#00C2E0" opacity=".6"/></svg><div class="chat-notif">1</div></button>
+</div>
+<div class="chat-modal" id="chatModal">
+  <div class="cm-hd">
+    <div class="cm-av-wrap"><div class="cm-av"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0099B3"/><stop offset="100%" stop-color="#003A50"/></linearGradient></defs><rect width="100" height="100" fill="url(#cbg)"/><rect x="22" y="18" width="56" height="48" rx="13" fill="#00C2E0" opacity=".9"/><circle cx="36" cy="36" r="8" fill="#070D18"/><circle cx="64" cy="36" r="8" fill="#070D18"/><circle cx="38.5" cy="33.5" r="3" fill="white"/><circle cx="66.5" cy="33.5" r="3" fill="white"/><path d="M35 54 Q50 64 65 54" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/><line x1="50" y1="18" x2="50" y2="8" stroke="#00C2E0" stroke-width="3"/><circle cx="50" cy="6" r="5" fill="#C9A84C"/><rect x="14" y="28" width="8" height="14" rx="4" fill="#00C2E0" opacity=".7"/><rect x="78" y="28" width="8" height="14" rx="4" fill="#00C2E0" opacity=".7"/><rect x="28" y="70" width="44" height="24" rx="9" fill="#0099B3" opacity=".85"/><circle cx="40" cy="82" r="4.5" fill="#00C2E0" opacity=".6"/><circle cx="50" cy="82" r="4.5" fill="#C9A84C" opacity=".9"/><circle cx="60" cy="82" r="4.5" fill="#00C2E0" opacity=".6"/></svg></div><div class="cm-ring"></div></div>
+    <div><div class="cm-nm">Aqua Intelligence™</div><div class="cm-ai">AI Pool Advisor</div><div class="cm-st"><div class="cm-std"></div>Online · Maphake Automation</div></div>
+    <button class="cm-close" onclick="closeChat()">✕</button>
+  </div>
+  <div class="cm-body" id="cmBody"></div>
+  <div id="leadsPanel" class="leads-panel" style="display:none"><div class="lp-t">📥 Live Lead Capture</div></div>
+  <div class="cm-ft"><input class="cm-inp" id="cmInp" placeholder="Type your message..." onkeydown="handleKey(event)" disabled><button class="cm-send" onclick="sendMsg()"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button></div>
+  <div class="cm-pw">Powered by <span>Maphake Automation</span></div>
+</div>
+<script src="shared.js"></script>
+</body>
+</html>
